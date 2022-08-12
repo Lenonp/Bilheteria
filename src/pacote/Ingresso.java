@@ -9,7 +9,7 @@ public class Ingresso extends bilheteria {
         
     }
 
-    public Ingresso(String nome, String c, String event) {
+    public Ingresso(String nome, String cpf, String event) {
     }
 
     @Override
