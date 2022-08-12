@@ -6,10 +6,12 @@ abstract public class bilheteria {
 
     /* ----~* Atributos *~---- */
 
-    private String nome;
-    private Date data;
+    public String nome;
+    public String cpf;
+    public Date data;
+    public String evento;
     protected double valor;
-    private String cap;
+    public String cap;
     
     /* ----~* Metodos *~---- */
     
@@ -18,12 +20,21 @@ abstract public class bilheteria {
 
     /* ----~* Set & Get *~---- */
 
+
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public Date getData() {
@@ -34,26 +45,29 @@ abstract public class bilheteria {
         this.data = data;
     }
 
-    public double getValorUni() {
+    public String getEvento() {
+        return evento;
+    }
+
+    public double getValor() {
         return valor;
     }
 
-    public void setValorUni(double valor) {
+    public void setValor(double valor) {
         this.valor = valor;
-        valor = 35.00;
     }
-
     public String getCap() {
         return cap;
     }
 
-    public void setCap(String cpf) {
-        this.cap = cpf;
+    public void setCap(String cap) {
+        this.cap = cap;
+    }
+
+    public void setCap(int cpf) {
     }
     
     public void setEvento(String event) {
-    }
-    public void setCap(int cpf) {
     }
     
 }

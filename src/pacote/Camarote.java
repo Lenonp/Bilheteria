@@ -1,17 +1,16 @@
 package pacote;
 
+import java.util.Date;
+
 public class Camarote extends Ingresso{
 
-    public Camarote(String nome, String cpf, String event) {
-        super(nome, cpf, event);
+    public Camarote(String nome, String cpf, String evento) {
+        super(nome, cpf, evento);
+        this.nome = nome; 
+        this.cpf = cpf;
+        this.evento = evento;
+        this.data = new Date();
         //TODO Auto-generated constructor stub
-    }
-
-    public static int Desconto = 60;
-    
-    public void calcularValorIngresso(double valor) {
-        double novoValor = valor + (valor * Desconto)/100;
-        System.out.println("Valor do Ingresso: R$ " + novoValor);
-    }
-    
+        this.acrescimo = 60;
+    }   
 }

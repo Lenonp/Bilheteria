@@ -1,19 +1,16 @@
 package pacote;
 
+import java.util.Date;
+
 public class Pista extends Ingresso{
 
-
-
-    public Pista(String nome, String cpf, String event) {
-        super(nome, cpf, event);
+    public Pista(String nome, String cpf, String evento) {
+        super(nome, cpf, evento);
+        this.nome = nome; 
+        this.cpf = cpf;
+        this.evento = evento;
+        this.data = new Date();
         //TODO Auto-generated constructor stub
-    }
-
-    public static int Desconto = 0;
-
-    public void calcularValorIngresso(double valor) {
-        double novoValor = valor + (valor * Desconto)/100;
-        System.out.println("Valor do Ingresso: R$ " + novoValor);
-    }
-    
+        this.acrescimo = 0;
+    }   
 }
