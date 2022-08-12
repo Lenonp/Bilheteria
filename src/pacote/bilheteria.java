@@ -50,7 +50,7 @@ abstract public class bilheteria {
     }
 
     public double getValor() {
-        return valor;
+        return valor = 35;
     }
 
     public void setValor(double valor) {

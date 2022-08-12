@@ -1,3 +1,4 @@
+import pacote.Camarote;
 import pacote.Pista;
 import pacote.Vip;
 
@@ -11,9 +12,9 @@ public class App {
         String n = "Anderson";
         String c = "011.212.212-11";
         String e = "Festa Junina";
-        Vip vip = new Vip(n, c, e);
-        vip.calcularValorIngresso();
-        vip.mostrarResumo();
+        Camarote cam = new Camarote(n, c, e);
+        cam.calcularValorIngresso();
+        cam.mostrarResumo();
     }
 
 }

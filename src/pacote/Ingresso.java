@@ -6,6 +6,7 @@ public class Ingresso extends bilheteria {
         super.setNome(nome);
         super.setCap(cpf);
         super.setEvento(event);
+        super.getValor();
         
     }
 
@@ -27,7 +28,7 @@ public class Ingresso extends bilheteria {
         System.out.println("CPF: " + this.getCpf());
         System.out.println("Evento: " + this.getEvento());
         System.out.println("Data: " + this.getData());
-        System.out.println("Valor: " + (valor + acrescimo));
+        System.out.println("Valor: " + (valor + (valor * acrescimo)/100));
     }
 
 
