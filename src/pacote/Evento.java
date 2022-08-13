@@ -1,36 +1,27 @@
 package pacote;
-import pacote.bilheteria;
+
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Evento extends bilheteria {
-    Evento vetEv[] = new Evento[30];
-    
-    abstract public void quantidadeIngressoVendido();
-    
-    
-    
-    
-    public Evento() {
-    }
+        
+        List<User> users = new ArrayList<>();
 
-
-    /* ----~* Metodos *~---- */
-    
-    public void venderIngresso(){
-        for (int i = 0; i <= 30; i++) {
-   
+        int i = 0;
+        while (i < 30) {
+            User actual = new User("Evento " + i, "data " + i, "valor " + i, "capacidade " + i);
+            users.add(actual);
+            
         }
 
-    }
+    System.out.println(user.get(0).getFirstName());
+    System.out.println(user.get(0).getLastName());
 
+    User user = new User("Show - Roberto Carlos" + i, "data " + i, "valor " + i, "capacidade " + i);
 
     @Override
     public void calcularValorIngresso() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void mostrarResumo() {
         // TODO Auto-generated method stub
         
     }
@@ -41,5 +32,14 @@ public abstract class Evento extends bilheteria {
         
     }
 
+    @Override
+    public void mostrarResumo() {
+        // TODO Auto-generated method stub
+        
+    }
+    user.add(user);
 
+    /* ----~* Metodos *~---- */
+    
 }
+    
