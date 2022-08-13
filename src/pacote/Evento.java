@@ -1,8 +1,27 @@
 package pacote;
+import pacote.bilheteria;
 
-import java.sql.Date;
+public abstract class Evento extends bilheteria {
+    Evento vetEv[] = new Evento[30];
+    
+    abstract public void quantidadeIngressoVendido();
+    
+    
+    
+    
+    public Evento() {
+    }
 
-public class Evento extends bilheteria {
+
+    /* ----~* Metodos *~---- */
+    
+    public void venderIngresso(){
+        for (int i = 0; i <= 30; i++) {
+   
+        }
+
+    }
+
 
     @Override
     public void calcularValorIngresso() {
@@ -15,5 +34,12 @@ public class Evento extends bilheteria {
         // TODO Auto-generated method stub
         
     }
+
+    @Override
+    public void imprimirValor() {
+        // TODO Auto-generated method stub
+        
+    }
+
 
 }

@@ -11,12 +11,13 @@ abstract public class bilheteria {
     public Date data;
     public String evento;
     protected double valor;
-    public String cap;
+    public int capacidade;
     
     /* ----~* Metodos *~---- */
     
     abstract public void calcularValorIngresso() ;
     abstract public void mostrarResumo() ;
+    abstract public void imprimirValor() ;
 
     /* ----~* Set & Get *~---- */
 
@@ -56,12 +57,12 @@ abstract public class bilheteria {
     public void setValor(double valor) {
         this.valor = valor;
     }
-    public String getCap() {
-        return cap;
+    public int getCapacidade() {
+        return capacidade;
     }
 
-    public void setCap(String cap) {
-        this.cap = cap;
+    public void setCapacidade(int capacidade) {
+        this.capacidade = capacidade;
     }
 
     public void setCap(int cpf) {
